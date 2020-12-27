@@ -1,0 +1,251 @@
+body {
+    background:url(images/bg-top.svg) right top no-repeat, url(images/bg-bottom.svg) left bottom no-repeat;
+    background-color: #F2F2F2;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.text {
+    margin: 0 auto;
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+}
+
+/* design for first card */
+.left {
+    position: absolute;
+    width: 350px;
+    height: 453px;
+    left: 195px;
+    top: 270px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #6E728E;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+.left .btn1 {
+    width: 288px;
+    height: 44px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 8px 100px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left p {
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.left .price1 {
+    font-size: 72px;
+}
+
+/* design for second card */
+.middle {
+    position: absolute;
+    width: 350px;
+    height: 501px;
+    left: 545px;
+    top: 246px;
+    background: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.middle .price2 {
+    font-size: 72px;
+}
+.middle .btn2 {
+    background-color: white;
+    border-radius: 6px;
+    color: #6D72DE;
+    text-decoration: none;
+    /* width: 388px; */
+    /* height: 44px; */
+    padding: 8px 100px;
+}
+
+.middle p {
+    font-weight: bold;
+}
+
+/* design for third card */
+.right {
+    position: absolute;
+    width: 350px;
+    height: 453px;
+    left: 895px;
+    top: 270px;
+    background-color: white;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+    color: #4A4D60;
+    text-align: center;
+}
+
+.right .btn3 {
+    width: 288px;
+    height: 44px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 8px 100px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right p {
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.right .price3 {
+    font-size: 72px;
+}
+
+.text p {
+    font-weight: bold;
+}
+
+.text h3 {
+    font-size: 27px;
+}
+
+/* the toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    
+  }
+  
+  input:checked + .slider {
+    background: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .toggle {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  /* this is for mobile responsivness */
+  @media screen and (max-width: 600px) {
+   
+    .text {
+        position: absolute;
+        width: 239px;
+        height: 111px;
+        left: 10px;
+        top: 64px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    /* design for first card */
+    .left {
+        position: absolute;
+        width: 327px;
+        height: 453px;
+        left: 24px;
+        top: 255px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: #6E728E;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    
+    /* design for second card */
+    .middle {
+        position: absolute;
+        width: 326px;
+        height: 453px;
+        left: 24px;
+        top: 740.5px;
+        background: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+        box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+    }
+    
+    
+    /* design for third card */
+    .right {
+        position: absolute;
+        width: 327px;
+        height: 453px;
+        left: 24px;
+        top: 1226px;
+        background-color: white;
+        box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+        border-radius: 10px;
+        color: #4A4D60;
+        text-align: center;
+    }
+  };
